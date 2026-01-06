@@ -1,0 +1,35 @@
+window {
+    margin: 5px;
+    border: 2px solid #cba6f7; /* Lavender */
+    background-color: #1e1e2e; /* Mocha Base */
+    font-family: "JetBrainsMono Nerd Font";
+    border-radius: 12px;
+}
+
+#input {
+    margin: 10px;
+    border: none;
+    color: #cdd6f4;
+    background-color: #313244;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#outer-box {
+    margin: 10px;
+}
+
+#entry:selected {
+    background-color: #cba6f7;
+    color: #11111b;
+    border-radius: 8px;
+}
+
+#text {
+    margin: 5px;
+    font-weight: bold;
+}
+
+#img {
+    margin-right: 10px;
+}
