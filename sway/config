@@ -20,7 +20,10 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec wofi --show drun
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Sair?' -b 'Sim' 'swaymsg exit'
-bindsym $mod+Mod1+w exec ~/dotfiles/sway/select_wallpaper.sh
+# windows alt w 
+bindsym $mod+Mod1+w exec ~/dotfiles/sway/select_wallpaper.sh 
+bindsym $mod+e exec thunar
+
 
 # Workspaces (Mudar de workspace)
 bindsym $mod+1 workspace number 1
@@ -38,3 +41,4 @@ exec flatpak run dev.vencord.Vesktop
 # --- Inicialização ---
 # Iniciar a Waybar (sempre fora de blocos e sem vírgulas)
 exec waybar
+exec_always nwg-dock -d -p bottom -a center -i 48 -mb 10

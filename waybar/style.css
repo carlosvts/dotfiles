@@ -29,6 +29,19 @@ window#waybar {
     color: #cdd6f4;
 }
 
+#custom-explorer, #custom-browser {
+    padding: 0 10px;
+    color: #cba6f7; /* Lavender */
+    background: #313244;
+    border-radius: 5px;
+    margin: 4px 2px;
+}
+
+#custom-explorer:hover, #custom-browser:hover {
+    background: #45475a;
+    color: #f5e0dc; /* Rosewater */
+}
+
 /* Cores específicas para cada módulo */
 #clock { color: #cba6f7; }
 #cpu { color: #f38ba8; }
