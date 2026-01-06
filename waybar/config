@@ -1,0 +1,45 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "battery", "tray"],
+
+    "sway/workspaces": {
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "default": ""
+        }
+    },
+    "clock": {
+        "format": "{:%H:%M} ",
+        "format-alt": "{:%A, %B %d, %Y} ",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": { "format": "{usage}% " },
+    "memory": { "format": "{}% " },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "⚠"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-icons": { "default": ["", "", ""] }
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    }
+}

@@ -1,0 +1,39 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    min-height: 0px;
+}
+
+window#waybar {
+    background-color: rgba(30, 30, 46, 0.85); /* Mocha Base */
+    color: #cdd6f4;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #cba6f7; /* Lavender */
+}
+
+#workspaces button.focused {
+    color: #fab387; /* Peach */
+    background-color: rgba(69, 71, 90, 0.5);
+}
+
+#clock, #cpu, #memory, #temperature, #network, #pulseaudio, #battery, #tray {
+    padding: 0 10px;
+    color: #cdd6f4;
+}
+
+/* Cores específicas para cada módulo */
+#clock { color: #cba6f7; }
+#cpu { color: #f38ba8; }
+#memory { color: #fab387; }
+#temperature { color: #94e2d5; }
+#network { color: #89b4fa; }
+#pulseaudio { color: #f9e2af; }
+#battery { color: #a6e3a1; }
