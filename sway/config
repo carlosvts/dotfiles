@@ -20,6 +20,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec wofi --show drun
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Sair?' -b 'Sim' 'swaymsg exit'
+bindsym $mod+Mod1+w exec ~/dotfiles/sway/select_wallpaper.sh
 
 # Workspaces (Mudar de workspace)
 bindsym $mod+1 workspace number 1
