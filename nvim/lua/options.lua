@@ -14,7 +14,7 @@ opt.expandtab = true -- Converte Tabs em espaços (importante para manter consis
 opt.smartindent = true
 
 -- Mostrar uma linha vertical no limite de 80 ou 100 caracteres
-opt.colorcolumn = "100"
+opt.colorcolumn = "140"
 
 -- Garante 4 espaços especificamente para C e C++
 vim.api.nvim_create_autocmd("FileType", {
