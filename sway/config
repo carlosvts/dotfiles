@@ -24,6 +24,7 @@ output * bg $HOME/dotfiles/sway/wallpapers/bg.jpg fill
 bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec wofi --show drun
+bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Sair?' -b 'Sim' 'swaymsg exit'
 # windows alt w 
