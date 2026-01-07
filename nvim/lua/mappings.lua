@@ -7,4 +7,7 @@ map("t", "<Esc>", [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
 -- Atalho alternativo: Se o ESC falhar, o 'jk' vai te salvar
 map("t", "jk", [[<C-\><C-n>]], { desc = "Exit terminal mode with jk" })
---- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+-- No modo Visual (v minúsculo), move a seleção e mantém ela selecionada (gv)
+map("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move seletion down" })
+map("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
