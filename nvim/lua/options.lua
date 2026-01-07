@@ -14,3 +14,7 @@ opt.expandtab = true -- Converte Tabs em espaços (importante para manter consis
 
 -- Mostrar uma linha vertical no limite de 80 ou 100 caracteres
 opt.colorcolumn = "100"
+
+-- Sair do modo terminal com ESC
+-- Força o Neovim a sempre aceitar ESC para sair do terminal, independente de plugins.
+vim.api.nvim_set_keymap('t', '<Esc>', [[<C-\><C-n>]], {noremap = true, silent = true})
