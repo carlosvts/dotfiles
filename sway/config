@@ -65,3 +65,4 @@ exec flatpak run dev.vencord.Vesktop
 # Iniciar a Waybar (sempre fora de blocos e sem vírgulas)
 exec waybar
 exec_always nwg-dock -d -p bottom -a center -i 48 -mb 10
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
