@@ -5,7 +5,7 @@
     "spacing": 4,
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "battery", "tray", "custom/power"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "battery", "custom/power", "tray"],
 
     "sway/workspaces": {
         "all-outputs": true,
