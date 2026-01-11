@@ -5,7 +5,7 @@
     "spacing": 4,
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "battery", "tray"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "battery", "tray", "custom/power"],
 
     "sway/workspaces": {
         "all-outputs": true,
@@ -14,13 +14,12 @@
             "1": "",
             "2": "",
             "3": "",
-	    "4": "󰙯",
+            "4": "󰙯",
             "default": ""
         }
     },
     "clock": {
-        "format": "{:%H:%M} ",
-        "format-alt": "{:%A, %B %d, %Y} ",
+        "format": "{:%H:%M | %a, %b %d, %Y} ",
         "tooltip-format": "<tt><small>{calendar}</small></tt>"
     },
     "cpu": { "format": "{usage}% " },
@@ -42,5 +41,10 @@
     "battery": {
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""]
+    },
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "nwg-bar",
+        "tooltip": false
     }
 }

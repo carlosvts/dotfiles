@@ -27,8 +27,8 @@ bindsym $mod+d exec wofi --show drun
 bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Sair?' -b 'Sim' 'swaymsg exit'
-# windows alt w 
-bindsym $mod+Mod1+w exec ~/dotfiles/sway/select_wallpaper.sh 
+# windows alt w 
+bindsym $mod+Mod1+w exec ~/dotfiles/sway/select_wallpaper.sh 
 bindsym $mod+e exec thunar
 bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 
@@ -41,9 +41,29 @@ bindsym $mod+5 workspace number 5
 bindsym $mod+6 workspace number 6
 # ... adicione até o 9 se quiser
 
-# Apagar tela do notebook
+# Teclas de movimento estilo Vim
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Teclas de movimento com setas
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Mover a janela focada
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+
+# Apagar tela do notebook e adiciona botao de desligar
 bindsym $mod+F11 output eDP-1 disable
 bindsym $mod+F12 output eDP-1 enable
+bindsym $mod+0 exec nwg-bar
 
 # Config monitor
 output HDMI-A-1 pos 0 0 res 1920x1080@144Hz
@@ -66,3 +86,4 @@ exec flatpak run dev.vencord.Vesktop
 exec waybar
 exec_always nwg-dock -d -p bottom -a center -i 48 -mb 10
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
