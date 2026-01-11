@@ -60,10 +60,9 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 
-# Apagar tela do notebook e adiciona botao de desligar
+# Apagar tela do notebook
 bindsym $mod+F11 output eDP-1 disable
 bindsym $mod+F12 output eDP-1 enable
-bindsym $mod+0 exec nwg-bar
 
 # Config monitor
 output HDMI-A-1 pos 0 0 res 1920x1080@144Hz
