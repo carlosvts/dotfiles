@@ -42,6 +42,17 @@ window#waybar {
     color: #f5e0dc; /* Rosewater */
 }
 
+#custom-power {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-right: 4px;
+    color: #ff5555;
+}
+
+#tray {
+    margin-left: 10px;
+}
+
 /* Cores específicas para cada módulo */
 #clock { color: #cba6f7; }
 #cpu { color: #f38ba8; }
